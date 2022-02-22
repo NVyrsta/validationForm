@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(212, 208, 208);
+}
+
+.container {
+    margin: auto;
+    margin-top: 30px;
+}
+
+form {
+    padding: 0 10px;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+input:focus {
+    outline: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.field {
+    width: 100%;
+    margin: 0 auto;
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 12px;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid rgb(173, 172, 172);
+    color: rgb(77, 76, 76);
+    font-size: 14px;
+}
+
+input[type='submit'] {
+    width: 100%;
+    margin: 15px auto;
+    height: 30px;
+    background-color: rgb(120, 110, 248);
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.active {
+    background-color: rgb(27, 13, 228) !important;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.ok {
+    width: 15px;
+    height: 15px;
+    fill: green;
+}
+
+.close {
+    width: 13px;
+    height: 13px;
+    fill: red;
+}
+
+.form_field {
+    position: relative;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.ok,
+.close {
+    position: absolute;
+}
+
+.ok {
+    right: 8px;
+    top: 12px;
+    visibility: hidden;
+}
+
+.close {
+    right: 8px;
+    top: 14px;
+}
+
+.error_message {
+    color: white;
+    background-color: rgb(253, 38, 38);
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.form_field {
+    padding-bottom: 6px;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.label {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    color: rgb(112, 111, 111);
+    font-size: 12px;
+}
+
+.success .field {
+    box-shadow: none;
+    border: 1px solid green;
+}
+
+.success .ok {
+    visibility: visible;
+}
+
+.success .close {
+    visibility: hidden;
+}
+
+.error .field {
+    box-shadow: none;
+    border: 1px solid red;
+}
+
+.error .close {
+    visibility: visible;
+}
+
+.error .ok {
+    visibility: hidden;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 48px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+}
+
+.modal-icon {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 225, 231);
+}
+
+.modal-content {
+    max-width: 400px;
+    min-height: 284px;
+    margin: auto;
+    background-color: white;
+}
+
+.modal-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-info h2 {
+    margin-top: 20px;
+    color: rgb(114, 112, 112);
+    font-size: 40px;
+}
+
+.modal-info p {
+    margin-bottom: 20px;
+    color: rgb(114, 112, 112);
+}
+
+.modal-info a {
+    background-color: orange;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    width: 180px;
+    position: relative;
+    padding: 8px;
+}
+
+.modal-info a svg {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 18px;
+    bottom: 6px;
+}
